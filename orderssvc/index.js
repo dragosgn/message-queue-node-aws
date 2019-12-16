@@ -8,7 +8,6 @@ AWS.config.update({region: 'eu-central-1'});
 // Create an SQS service object
 const sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 const queueUrl = process.env.SQS_QUEUE_URL;
-console.log("url queee", queueUrl)
 
 const port = process.argv.slice(2)[0];
 const app = express();

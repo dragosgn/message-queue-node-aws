@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-orders-svc": "nodemon ./orderssvc/index.js 8081",
-    "start-emails-svc": "nodemon ./emailssvc/index.js",
+    "start-orders-svc": "nodemon -r dotenv/config ./orderssvc/index.js 8081",
+    "start-emails-svc": "nodemon -r dotenv/config ./emailssvc/index.js",
     "start": "npm-run-all -p -r start-orders-svc"
   },
   "author": "",
