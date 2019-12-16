@@ -6,7 +6,7 @@
   "scripts": {
     "start-orders-svc": "nodemon -r dotenv/config ./orderssvc/index.js 8081",
     "start-emails-svc": "nodemon -r dotenv/config ./emailssvc/index.js",
-    "start": "npm-run-all -p -r start-orders-svc"
+    "start": "npm-run-all -p -r start-orders-svc start-emails-svc"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "aws-sdk": "^2.590.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "nodemailer": "^6.4.2",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "sqs-consumer": "^5.4.0"

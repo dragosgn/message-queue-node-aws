@@ -1,5 +1,6 @@
 const AWS = require("aws-sdk")
 const {Consumer} = require("sqs-consumer")
+const nodemailer = require("nodemailer")
 
 
 AWS.config.update({region: 'eu-central-1'});
